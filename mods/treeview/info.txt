@@ -1,0 +1,13 @@
+title: Threaded Tree View
+desc:  This module displays the threaded list view with tree lines similar to those used in Phorum 3.
+author: Brian Moon, updated for Phorum 5.2 by Joe Curia
+version: 5.2.1.00
+
+url: http://www.phorum.org/phorum5/read.php?62,135543
+
+category: viewlayout
+
+hook: start_output|mod_treeview_start_output
+hook: end_output|mod_treeview_end_output
+hook: list|mod_treeview
+hook: read|mod_treeview

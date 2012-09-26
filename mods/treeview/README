@@ -1,0 +1,59 @@
+===== Threaded Tree View v5.2.1.00 =====
+Created by Brian Moon and updated by Joe Curia (azumandias _ at _ hotmail.com)
+Original phorum coding by the Phorum Development Team (http://www.phorum.org)
+
+========        Brief Description         ========
+This module displays the threaded list view with tree lines similar to those used in Phorum 3.
+
+========      Installation and Usage      ========
+This module installs like any other module.
+
+From the settings page you can customize the color and thickness of the tree 
+lines.  Each template can have its own line color and thickness which will be 
+displayed if you leave the settings empty.
+
+If you have a custom template and want to use this module, you will need to 
+create a folder in this modules's template folder and copy your template's 
+list_threads.tpl and read_threads.tpl files into that folder.  Using the 
+supported templates as examples add the necessary lines to the template files.
+Those lines can be found in the supported templates after the 
+<!--  Begin the Threaded Tree View customization  --> line.
+
+Depending on the Phorum template you use as a base, I would suggest starting 
+with that template's code.  Regardless, you may need to adjust the margins and
+height values.
+
+You will also need to create a settings.php file in your template's folder. I 
+would again suggest copying this file frocm one of the supported templates. You 
+will then need to adjust the line height and width.  If your template requires
+further tweaking (such as for messages with a special icon which changes the 
+height of their row) you can add php code to the four alloted modifier variables
+in the settings.php file.  Examples of this can be seen in the Classic and 
+Emerald templates.  It is important to note that if you do not use one of the 
+modifier variables, it should still be supplied simply with an empty string.
+
+The Classic, Emerald, and Lightweight templates are supported without 
+any extra work on your part.
+
+========                Todo              ========
+ - Add features as requested.
+ 
+========               Files              ========
+treeview\
+	treeview.php
+	info.txt
+	README
+	settings.php
+	templates\
+		classic\
+			list_threads.tpl
+            read_threads.tpl
+            settings.php
+		emerald\
+			list_threads.tpl
+            read_threads.tpl
+            settings.php
+		lightweight\
+			list_threads.tpl
+            read_threads.tpl
+            settings.php
