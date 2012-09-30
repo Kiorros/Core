@@ -1,0 +1,74 @@
+v5.2.1.08
+  - Enhancement: Added support for the Admin Token required by Phorum 5.2.11 and
+    beyond.  Thanks go to Phorum user sdbbs for the majority of the coding in 
+    this commit.
+v5.2.1.07
+	- Fixed a bug which required disabling template caching.
+	- Fixed a bug which would possibly cause the settings page to not load 
+	  the first time this module was setup.
+	- Fixed a bug which caused an error when trying to export color settings 
+	  to a file.
+	- Removed further PHP warnings.
+	- Confirmed compatibility with Phorum 5.2.8.
+v5.2.1.06
+	- Fixed a bug in the file export which would only allow one export per page
+	  load.
+	- Removed further PHP warnings.
+v5.2.1.05
+	- Added the ability to export settings to .csf files and import settings
+	  from those files.  Please ensure that the new .htaccess file is with this
+	  version of the mod, otherwise you will not be able to export files.
+	- Added status info when carrying out various scheme functions.
+	- Alphabetized the drop down lists displaying the available color schemes.
+	- Changed the layout of the settings page for enhanced usability.
+	- Fixed a bug which would cause the settings page to fail if the mod was not
+	  able to create png files.
+	- Added a debugging setting to determine where on the settings page a failure
+	  may have occurred.  Note this feature is mainly used for development, but if
+	  you are curious or have the need, simply add "&enable_debugging=1" to the 
+	  mod's url then go to the bottom and set debugging on.
+v2.04
+	 - Added an option for those who may want to erase this mod's settings during
+	   an upgrade if there are problems.  See the README for more details.
+	 - Fixed a bug which would not allow custom background images to display.
+	 - Fixed a bug which could cause background images to fail when importing color
+	   schemes.
+	 - Got rid of further PHP warnings.
+	 
+v2.03 (courtesy of Maurice Makaay)
+	 - Got rid of PHP warnings.
+	 - Implemented a css_register hook to make the css.php script reload the
+	   CSS after doing changes in the settings page for this module.
+v2.02
+	 - When manually changing color values, illegal color values will now raise an alert.
+	 - Updated the settings page to properly display more than 24 color variables.
+v2.01
+	 - Added the ability to edit the background images used in the Emerald template.  You
+	   can make your own gradient images or a solid image by using the same upper and lower
+	   colors.  
+	 - Fixed a bug which would cause errors if a deleted scheme was applied to a forum or 
+	   template but not removed from the forum or template.
+v2.00
+	 - Updated for Phorum 5.2 Compatability
+	 - Added the ability to pull any color variable from any template.  This mod searches
+	   for any variable whose value is equal to a hex color (#FFFFFF) or whose value is
+	   equal to one of the standard web colors (White).
+v1.03
+	 - Added the ability to apply a saved color scheme to each individual template.
+	 - Fixed bug in saving a color scheme to each individual forum which prevented more
+	   then one forum from having a color scheme.
+	 - Fixed a bug which could cause problems importing template color schemes.
+	 - Fixed a bug which could cause a problem when applying a color scheme to a specific
+	   forum, other forums would generate an error.
+v1.02
+	 - Added the ability to apply a saved color scheme to each individual forum.
+	 - Added confirmation dialog before applying a theme to any and every forum.
+	 - Added confirmation dialog when saving a color scheme would result in an overwrite
+	   of a previously saved color scheme.
+v1.01
+	 - Added Import/Export of Color Schemes in from pasted settings.
+	 - Fixed FireFox coding to properly confirm deletion of a color scheme.
+	 - Fixed FireFox coding to properly select colors and undo selections.
+v1.00
+	 - Started
+

@@ -1,0 +1,11 @@
+title: Easy Color Scheme Manager
+category: admin
+category: viewlayout
+author: Joe Curia
+desc: Choose a color scheme, based on any template, preview it, and apply it to your forum.  You can also save and reapply different schemes.
+version: 5.2.1.08
+url: http://www.phorum.org/phorum5/read.php?62,123555
+
+hook: css_register|phorum_mod_easy_colorscheme_css_register
+hook: common|phorum_mod_easy_colorscheme_common
+

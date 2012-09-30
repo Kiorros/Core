@@ -1,0 +1,5 @@
+title: Threading Tree
+desc:  Adds DCForum style threading tree to hybrid mode
+author: Margaret Camp
+url: https://github.com/Kiorros/Core
+

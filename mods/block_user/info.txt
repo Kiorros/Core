@@ -1,0 +1,13 @@
+title: Block User
+desc:  Allows administrators to handle misbehaving or spammy users.
+author: Thomas Seifert
+url: http://www.phorum-support.de
+version: 1.0.0
+require_version: 5.2.0
+category: admin
+category: user_management
+
+hook: before_footer|phorum_mod_block_user_before_footer
+hook: addon|phorum_mod_block_user_addon
+hook: profile|phorum_mod_block_user_profile
+hook: lang|

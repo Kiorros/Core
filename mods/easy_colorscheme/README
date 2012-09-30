@@ -1,0 +1,54 @@
+======== Easy Color Scheme Manager Module v5.2.1.08 ========
+Created by Joe Curia (azumandias _ at _ hotmail.com)
+Original phorum coding by the Phorum Development Team (http://www.phorum.org)
+Hexagonal Color Table provided by colorDavid at http://www.stokhorst.nl/colorDavid/
+	You are free to use these tables for inclusion in other work, provided you 
+	include a URL to this website, as well as this notice that orders to do so.
+
+========            Brief Description           ========
+This module allows you to create a color scheme, based on any template, preview
+it, and apply it to your forum.  You can also save and reapply different schemes.
+
+========         Installation and Usage         ========
+This module installs like any other module, though it has a number of non-standard
+files in its directory.  Make sure they are all included (see file list below).
+
+When you first open this module it will pull the color variables from your currently 
+applied template.  These colors will be saved to the "DefaultColors" scheme. Note that 
+any colors found in the template that use a color name rather than the hexadecimal 
+value will be converted to their respective hexadecimal values.  You can then change 
+any color by selecting it or clicking in the color code field.  You can either click 
+one of the colors shown in the color table provided or enter your own color names or 
+hexadecimals values (be sure to include the #). Once you have chosen your colors you can 
+save them as a color scheme then preview that scheme or apply it to your forum.  The 
+currently applied global color scheme is always shown at the top of the settings page.
+
+A note for those of you upgrading.  As a last case resort, You may find it easier to 
+simply start your color schemes over from scratch if you run into problems.  To do so,
+please open the settings for this module then paste the following into your web browsers 
+address bar after the page information that is there:
+&erase_easy_colorscheme=VERITABLY
+The address should look something like:
+http://www.yourweb.com/admin.php?module=modsettings&mod=easy_colorscheme&phorum_admin_token=1a2b3c4d5e6f7g8h9i0j&erase_easy_colorscheme=VERITABLY
+Now hit ENTER and this will erase all of your color scheme settings.  Please note
+this is irreversible so only do this if you have the need.  You can then rebuild
+your color schemes and they should work just fine.
+
+========                   Todo                 ========
+  - Change default gradient image size settings for color schemes.
+
+========                  Files                 ========
+easy_colorscheme\
+	.htaccess
+	Changelog
+	colorDavid_hw16.gif
+	colorDavid_lw16.gif
+	colorDavid_mw16.gif
+	colortable.modx
+	easy_colorscheme.php
+	export_file.php
+	info.txt
+	README
+	settings.php
+	tmp_images\
+		README

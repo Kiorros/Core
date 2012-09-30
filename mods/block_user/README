@@ -1,0 +1,34 @@
+Module  : Block User
+Author  : Thomas Seifert
+
+Allows administrators to handle misbehaving or spammy users by:
+- blocking them in a specific (sub-)forum (no post possible)
+- blocking them in the whole phorum (no post possible)
+- disabling them (no login possible)
+
+- deleting all their posts
+
+That action can be done by clicking a link in the user profile and selecting
+the options on the followup page.
+
+
+Installation:
+-------------
+
+- Unpack the archive;
+
+- Move the directory "block_user" to the directory "mods"
+  within your Phorum installation;
+
+- Login as administrator in Phorum's administrative interface and
+  go to the "Modules" section;
+
+- Enable the module "Block User".
+
+
+Notes:
+------
+
+As deleting all messages of a user is a time consuming task in the database 
+the deletion is only done up to 100 messages for the user. Usually spam users
+don't have that many messages (yet).
